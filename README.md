@@ -1,8 +1,34 @@
-# React + Vite
+Mock Data Viewer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+The Mock Data Viewer App is a React-based application that allows users to view, filter, and load an infinite scroll of mock data records. The app is designed to be visually appealing and easy to navigate, featuring responsive layouts and user-friendly components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+
+Mock Data Generation: Utilizes the @faker-js/faker library to generate mock data including name, email, and age.
+
+Search Functionality: Users can search and filter records by name or email.
+
+Infinite Scroll: Allows users to load more data on-demand with a 'Load More' button.
+
+Responsive Design: Optimized for both desktop and mobile devices.
+
+Project Structure
+
+project-root/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.jsx
+│   │   └── RecordList.jsx
+│   ├── utils/
+│   │   └── GenerateMockData.js
+│   ├── App.jsx
+│   ├── main.js
+│   ├── index.css
+│   
+├── .gitignore
+├── package.json
+└── README.md
